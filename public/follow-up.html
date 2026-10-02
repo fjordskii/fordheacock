@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Follow-up loop</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; font: 17px/1.45 Georgia, "Iowan Old Style", serif; color: #1c1917; background: #faf8f5; }
+  main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font: 600 1.6rem/1.2 system-ui, sans-serif; margin: 0 0 .4rem; }
+  .lede { margin: 0 0 1.75rem; color: #44403c; }
+  h2 { font: 600 .8rem/1 system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #78716c; margin: 2rem 0 .75rem; }
+  ol { list-style: none; margin: 0; padding: 0; }
+  li { background: #fff; border: 1px solid #e7e5e4; border-radius: 10px; padding: .9rem 1rem; margin: 0; }
+  li + li { margin-top: .55rem; }
+  .n { font: 600 .75rem/1 system-ui, sans-serif; color: #b45309; display: block; margin-bottom: .25rem; }
+  strong { font-weight: 650; }
+  .arrow { text-align: center; color: #a8a29e; font: 1rem system-ui, sans-serif; margin: .15rem 0; }
+  .side { margin-top: 1rem; padding-left: .25rem; }
+  .side p { margin: .35rem 0; }
+  .off { background: #fff7ed; }
+  footer { margin-top: 2rem; font: .85rem/1.4 system-ui, sans-serif; color: #78716c; }
+</style>
+</head>
+<body>
+<main>
+  <h1>How a follow-up runs</h1>
+  <p class="lede">One lead becomes one row. A reply stops the chase. The automatic send is still off.</p>
+
+  <h2>The path</h2>
+  <ol>
+    <li><span class="n">1 · Lead</span>Someone fills the form, or another system posts to the same intake.</li>
+    <div class="arrow">↓</div>
+    <li><span class="n">2 · Already here?</span>If that email is already queued, waiting on a reply, opted out, or bounced, no second row is added. You get a note. Otherwise a new row is queued, due today, on the first check-in template.</li>
+    <div class="arrow">↓</div>
+    <li><span class="n">3 · Send</span>A manual run sends only rows that are queued and due. It skips paused, stopped, replied, bounced, and opted-out addresses. The row becomes “waiting on a reply.”</li>
+    <div class="arrow">↓</div>
+    <li><span class="n">4 · Watch</span>The inbox is checked for a message from that address, or in the same thread. The subject line does not matter.</li>
+  </ol>
+
+  <h2>What stops it</h2>
+  <ol>
+    <li><span class="n">They write back</span>Status becomes replied. Outcome is “replied,” unless a later outcome was already set. You are notified.</li>
+    <li><span class="n">They ask to stop</span>Words like “remove me” or “unsubscribe” stop that address for good, including a later new row.</li>
+    <li><span class="n">The address bounces</span>The row is marked bounced and is not emailed again. This is wired, and has not been seen on a real bounce yet.</li>
+    <li><span class="n">Three notes, no answer</span>After three sends with no reply, the row stops and you are notified. A second and third template are not sent yet.</li>
+  </ol>
+
+  <h2>Not turned on</h2>
+  <ol>
+    <li class="off"><span class="n">Automatic send</span>The 15-minute sender is off. Sends happen only when someone runs them.</li>
+    <li class="off"><span class="n">Their mailbox</span>Mail still goes out from your Gmail. Their address is only a setting.</li>
+    <li class="off"><span class="n">Their sheet</span>The queue still lives on your Drive. They do not own it yet.</li>
+    <li class="off"><span class="n">A real lead</span>Only test addresses have been through the loop.</li>
+  </ol>
+
+  <footer>Proven with a test inbox: one queued row, one send, one reply, outcome set to replied. No customer was emailed.</footer>
+</main>
+</body>
+</html>
