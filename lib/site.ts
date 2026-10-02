@@ -10,7 +10,7 @@ export const site = {
   url: "https://fordheacock.com",
   tagline: "AI and ops automation for SMB operators. One workflow that pays for itself.",
   description:
-    "Ford Heacock builds AI and ops automation for SMB operators in Lakeland, FL. One production workflow you own, then the next. 13 years shipping software for startups and NASA.",
+    "Ford Heacock builds AI and ops automation for small businesses in Lakeland, FL. One production workflow you own, then the next. 13 years shipping software for startups and NASA.",
 } as const;
 
 export const introSubject = "AI consulting - intro call";
