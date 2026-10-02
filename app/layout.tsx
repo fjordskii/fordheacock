@@ -10,15 +10,14 @@ const geistMono = Geist_Mono({
   weight: ["400", "500"],
 });
 
-const description =
-  "13 years building and shipping software for startups and NASA — from payment systems processing hundreds of millions to ISS software tools. Now AI strategy, architecture, and integration for small businesses. Ford Heacock · Lakeland, FL.";
+const description = site.description;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: `${site.name} — ${site.role}`,
+  title: `${site.name} · ${site.role}`,
   description,
   openGraph: {
-    title: `${site.name} — ${site.role}`,
+    title: `${site.name} · ${site.role}`,
     description,
     url: site.url,
     siteName: site.name,
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — ${site.role}`,
+    title: `${site.name} · ${site.role}`,
     description,
     images: ["/og.png"],
   },
@@ -43,7 +42,7 @@ export const viewport: Viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: `${site.name} — ${site.role}`,
+  name: `${site.name} · ${site.role}`,
   description,
   url: site.url,
   areaServed: "Central Florida",
