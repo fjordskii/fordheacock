@@ -1,4 +1,5 @@
-import { hero } from "@/lib/content";
+import { hero, nav } from "@/lib/content";
+import { BracketLink } from "@/components/bracket-link";
 import { NebulaField } from "@/components/nebula-field";
 
 /**
@@ -9,10 +10,27 @@ export function AsciiHero() {
   return (
     <header className="relative flex min-h-svh flex-col overflow-hidden">
       {/* Terminal prompt header — in-flow so it never collides with the copy below */}
-      <p className="relative z-10 px-6 pt-6 text-xs tracking-[0.14em] text-graphite md:px-10 md:pt-8">
-        ~/ $ whoami{" "}
-        <span className="text-granite">fordheacock.com</span>
-      </p>
+      <div className="relative z-10 px-6 pt-6 md:px-10 md:pt-8">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-baseline sm:justify-between">
+          <p className="text-xs tracking-[0.14em] text-graphite">
+            ~/ $ whoami <span className="text-granite">fordheacock.com</span>
+          </p>
+          <nav aria-label="On this page">
+            <ul className="flex flex-wrap gap-x-4 gap-y-1 text-[11px] tracking-[0.14em] text-graphite md:text-xs">
+              {nav.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="transition-colors duration-300 hover:text-bone focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-stone"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
 
       <NebulaField />
 
@@ -38,18 +56,14 @@ export function AsciiHero() {
             </p>
 
             <div className="mt-8 md:mt-12">
-              <a
-                href={hero.cta.href}
-                className="inline-block border border-ash px-6 py-3 text-xs font-medium tracking-[0.12em] text-bone transition-colors duration-300 hover:border-signal hover:bg-signal hover:text-void md:px-8 md:py-4 md:text-sm"
-              >
-                [ {hero.cta.label} ]
-              </a>
-              <p className="mt-4 text-xs leading-relaxed">
+              <BracketLink href={hero.cta.href}>{hero.cta.label}</BracketLink>
+              <p className="mt-4 text-xs leading-relaxed text-graphite">{hero.ctaNote}</p>
+              <p className="mt-3 text-xs leading-relaxed">
                 <a
                   href={hero.sublink.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-graphite underline decoration-ash underline-offset-4 transition-colors duration-300 hover:text-signal hover:decoration-signal"
+                  className="text-graphite underline decoration-ash underline-offset-4 transition-colors duration-300 hover:text-signal hover:decoration-signal focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-stone"
                 >
                   {hero.sublink.label}
                 </a>
