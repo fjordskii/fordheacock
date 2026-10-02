@@ -19,9 +19,9 @@ export const hero = {
   name: "FORD HEACOCK",
   role: "SOFTWARE CONSULTANT · AI & OPS AUTOMATION · LAKELAND, FL",
   /** Accent line renders red. */
-  pitchLead: "Integrating AI or agentic workflows into your business?",
+  pitchLead: "Still chasing follow-ups by hand?",
   pitchAccent: "Start with one workflow that pays for itself.",
-  sub: "For SMB operators. Wholesale, DTC, and teams that already live in Google Workspace.",
+  sub: "For small businesses that already live in Google Workspace.",
   cta: { label: "BOOK A FIT CALL", href: mailto(introSubject) },
   ctaNote: "Free, 20-30 min",
   sublink: { label: "FIND ME ON LINKEDIN →", href: site.linkedin },
@@ -31,9 +31,9 @@ export const fit = {
   id: "fit",
   kicker: "01  /  FIT",
   title: "Who this is for",
-  body: "Operators and founders at small businesses who are drowning in follow-ups, inbox chase, and spreadsheet ops. Wholesale, DTC, field services, and small teams that already live in Google Workspace.",
+  body: "Operators and founders at small businesses who are drowning in follow-ups and spreadsheet ops. Wholesale, DTC, field services, and small teams that already live in Google Workspace.",
   aside:
-    "Not enterprise AI strategy decks. Not a promise to transform the company.",
+    "One workflow for a small team. You own it.",
 };
 
 export const process = {
@@ -95,10 +95,10 @@ export const proof = {
   id: "proof",
   kicker: "04  /  PROOF",
   title: "Wholesale follow-up that does not drop the ball",
-  body: "A Florida free-from bakery selling into grocery and DTC. Due rows in a Google Sheet send templated Gmail follow-ups through n8n. A real customer reply flips the status and notifies the owner, so the chase stops when someone writes back.",
+  body: "A Florida company selling into grocery and DTC. Due rows in a Google Sheet send templated Gmail follow-ups through n8n. A real customer reply flips the status and notifies the owner, so the chase stops when someone writes back.",
   facts: [
     { label: "STACK", value: "Google Sheets · n8n · Gmail" },
-    { label: "RESULT", value: "A real reply stops the chase. They saw a demo and moved ahead." },
+    { label: "RESULT", value: "They saw a demo and moved ahead." },
   ],
 };
 
@@ -106,14 +106,14 @@ export const about = {
   id: "about",
   kicker: "05  /  ABOUT",
   title: "About",
-  bio: "I’ve spent 13 years building and shipping software for startups and NASA, working on everything from payment systems processing hundreds of millions of dollars to tools used to manage software for the International Space Station. Along the way, I’ve built products and user experiences used by millions of people, always with a focus on making complex things feel simple and intuitive.",
-  now: "Now I help Florida operators put that same craft into the automations that run their week.",
+  bio: "I’ve spent 13 years building and shipping software for startups and NASA, working on everything from payment systems processing hundreds of millions of dollars to tools used to manage software for the International Space Station. Along the way, I’ve built products and user experiences used by millions of people.",
+  now: "Now I help Florida operators automate the work that fills their week.",
 };
 
 export const contact = {
   id: "contact",
   kicker: "06  /  CONTACT",
-  title: "Ready for one workflow that actually ships?",
+  title: "Book a free fit call.",
   subject: introSubject,
   cta: { label: "BOOK A FIT CALL", href: mailto(introSubject) },
 };
