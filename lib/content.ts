@@ -20,8 +20,8 @@ export const hero = {
   role: "SOFTWARE CONSULTANT · AI & OPS AUTOMATION · LAKELAND, FL",
   /** Accent line renders red. */
   pitchLead: "Still chasing follow-ups by hand?",
-  pitchAccent: "Start with one workflow that pays for itself.",
-  sub: "For small businesses that already live in Google Workspace.",
+  pitchAccent: "I find the chore that costs you money, fix the process, then automate it.",
+  sub: "On the tools you already run.",
   cta: { label: "BOOK A FIT CALL", href: mailto(introSubject) },
   ctaNote: "Free, 20-30 min",
   sublink: { label: "FIND ME ON LINKEDIN →", href: site.linkedin },
@@ -31,7 +31,7 @@ export const fit = {
   id: "fit",
   kicker: "01  /  FIT",
   title: "Who this is for",
-  body: "Operators and founders at small businesses who are drowning in follow-ups and spreadsheet ops. Wholesale, DTC, field services, and small teams that already live in Google Workspace.",
+  body: "Operators and founders at small businesses drowning in follow-ups and spreadsheet ops. Wholesale, DTC, field services, small teams. Whatever stack you already use is fine.",
   aside:
     "One workflow for a small team. You own it.",
 };
@@ -46,19 +46,19 @@ export const process = {
       kicker: "01",
       name: "Discovery",
       price: "$1,000-$1,500",
-      body: "Map the painful process, pick the first win, and leave with a fixed-price Pilot quote.",
+      body: "Walk through where time and money leak. Map the process, rank the fixes, and leave with a fixed Pilot quote.",
     },
     {
       kicker: "02",
       name: "Pilot",
       price: "$4,500-$7,500",
-      body: "Ship one production automation you own. n8n, Sheets, Gmail, or the tools you already run.",
+      body: "One production workflow you own. Build, error handling, short docs, a Loom, and a live handoff. n8n, Sheets, Gmail, or whatever you already run. Done when your team can run it without you.",
     },
     {
       kicker: "03",
       name: "Retain",
       price: "$1,200-$2,000/mo",
-      body: "Keep it healthy, and add the next workflow when the first one is earning its keep.",
+      body: "Keep the Pilot healthy. Small changes, and one modest new flow a month when the first is paying for itself. Priority when something breaks.",
     },
   ],
 };
@@ -73,20 +73,20 @@ export const packages = {
     {
       name: "Discovery / Ops Audit",
       price: "$1,000-$1,500",
-      duration: "1 week",
-      body: "Process map, a recommendation for the tools you already have, a sketch of the hours you get back, and a fixed Pilot quote. 100% of the fee is credited toward Pilot if you start within 30 days.",
+      duration: "about 1 week",
+      body: "Walk through where time and money leak. Short process map, 3-5 ranked fixes, what to do yourself vs with me, fixed Pilot quote. 100% of the fee credits toward Pilot if you start within 30 days.",
     },
     {
       name: "Pilot",
       price: "$4,500-$7,500",
       duration: "2-4 weeks",
-      body: "One production workflow, end to end: the build, error handling, short docs, a Loom, and a live handoff. You own the n8n, Sheets, and Gmail accounts.",
+      body: "One production workflow you own. Build, error handling, short docs, a Loom, live handoff. n8n, Sheets, Gmail, or whatever you already run. Done when your team can run it without me.",
     },
     {
       name: "Retain",
       price: "$1,200-$2,000/mo",
-      duration: "Month-to-month",
-      body: "Monitoring, small changes, and one modest new flow a month. Priority response, for as long as it is useful.",
+      duration: "month to month",
+      body: "Keep the Pilot healthy, small changes, and one modest new flow a month when the first one is paying for itself. Priority when something breaks.",
     },
   ],
 };
@@ -95,7 +95,7 @@ export const proof = {
   id: "proof",
   kicker: "04  /  PROOF",
   title: "Wholesale follow-up that does not drop the ball",
-  body: "A Florida company selling into grocery and DTC. Due rows in a Google Sheet send templated Gmail follow-ups through n8n. A real customer reply flips the status and notifies the owner, so the chase stops when someone writes back.",
+  body: "Due rows in a sheet send templated emails; a real reply stops the chase and pings the owner. They saw the demo and moved ahead.",
   facts: [
     { label: "STACK", value: "Google Sheets · n8n · Gmail" },
     { label: "RESULT", value: "They saw a demo and moved ahead." },
