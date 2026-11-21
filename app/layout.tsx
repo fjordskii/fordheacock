@@ -41,22 +41,17 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: `${site.name} · ${site.role}`,
+  "@type": "Person",
+  name: site.name,
+  jobTitle: site.role,
   description,
   url: site.url,
-  areaServed: "Central Florida",
+  sameAs: [site.linkedin],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lakeland",
     addressRegion: "FL",
     addressCountry: "US",
-  },
-  founder: {
-    "@type": "Person",
-    name: site.name,
-    jobTitle: site.role,
-    sameAs: [site.linkedin],
   },
 };
 
